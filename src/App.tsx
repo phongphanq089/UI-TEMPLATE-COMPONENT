@@ -10,6 +10,7 @@ function App() {
       <Route path='/' element={<HomePage />} />
       <Route path='/page-scroll-stricky-1' element={<PageSrollStricky1 />} />
       <Route path='/liquid-side-nav' element={<LiquidSideNav />} />
+      <Route path='*' element={<div>NOT FOUND</div>} />
     </Routes>
   )
 }
