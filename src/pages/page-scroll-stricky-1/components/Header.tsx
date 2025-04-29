@@ -230,7 +230,7 @@ const Header = () => {
                   <Link
                     onMouseEnter={() => onMouseEnter(index)}
                     onMouseOut={onMouseOut}
-                    className='group relative isolate font-bebasNeue text-6xl font-bold leading-[0.8] transition-all duration-300 hover:invert'
+                    className='group relative isolate font-bebasNeue text-6xl font-bold leading-[0.8] transition-all duration-300 hover:invert uppercase'
                     key={index}
                     to={'#'}
                   >
@@ -262,7 +262,7 @@ const Header = () => {
 
 const LinkWithUnderline = ({ children }: PropsWithChildren) => {
   return (
-    <Link className='group relative isolate font-bebasNeue text-xl font-bold leading-[0.9]' to={'#'}>
+    <Link className='group relative isolate font-bebasNeue text-xl font-bold leading-[0.9] uppercase' to={'#'}>
       {children}
       <span className='absolute bottom-0 left-0 -z-10 h-px w-full origin-right scale-x-0 bg-current transition-transform duration-300 group-hover:origin-left group-hover:scale-x-100'></span>
     </Link>
