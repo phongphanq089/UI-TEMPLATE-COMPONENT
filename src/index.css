@@ -177,3 +177,14 @@
     @apply font-bebasNeue  font-bold uppercase leading-[0.8];
   }
 }
+
+@layer utilities {
+  .fill {
+    object-fit: cover;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    inset: 0px;
+    color: transparent;
+  }
+}
