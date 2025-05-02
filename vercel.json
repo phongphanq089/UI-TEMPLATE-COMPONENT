@@ -7,7 +7,6 @@
   ],
   "builds": [
     {
-      "src": "./",
       "use": "@vercel/node",
       "config": {
         "installCommand": "npm install --force",
