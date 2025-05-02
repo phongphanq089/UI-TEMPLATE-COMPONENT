@@ -1,14 +1,17 @@
 import { Route, Routes } from 'react-router-dom'
 
 import HomePage from './pages/home/HomePage'
-import PageSrollStricky1 from './pages/page-scroll-stricky-1/PageSrollStricky1'
-import LiquidSideNav from './pages/liquid-side-nav/LiquidSideNav'
+
 import ZoomParallax from './ui-library/zoom-parallax/ZoomParallax'
 import TextParallax from './ui-library/text-parallax/TextParallax'
 import SplitVignette from './ui-library/split-vignette/SplitVignette'
 import SplashCursor from './ui-library/splash-cursor/SplashCursor'
 import JellyCursor from './ui-library/jelly-cursor/JellyCursor'
 import ImageTrail from './ui-library/image-trail/ImageTrail'
+import BackgroundGradientAnimate from './ui-library/background-gradient-animate/BackgroundGradientAnimate'
+import NotFoundPage from './ui-library/not-found-page/NotFoundPage'
+import PageSrollStricky1 from './ui-library/page-scroll-stricky-1/PageSrollStricky1'
+import LiquidSideNav from './ui-library/liquid-side-nav/LiquidSideNav'
 
 function App() {
   return (
@@ -29,7 +32,9 @@ function App() {
       />
       <Route path='/jelly-cursor' element={<JellyCursor />} />
       <Route path='/image-trail' element={<ImageTrail />} />
-      <Route path='*' element={<div>NOT FOUND</div>} />
+      <Route path='/background-gradient-animate' element={<BackgroundGradientAnimate />} />
+      <Route path='/not-found-page' element={<NotFoundPage />} />
+      <Route path='*' element={<NotFoundPage />} />
     </Routes>
   )
 }

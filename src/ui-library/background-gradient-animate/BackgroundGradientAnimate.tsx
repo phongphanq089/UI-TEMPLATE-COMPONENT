@@ -1,7 +1,7 @@
 import { ShaderGradient, ShaderGradientCanvas } from '@shadergradient/react'
 import { useEffect } from 'react'
 import { animate, svg, stagger } from 'animejs'
-const HomePage = () => {
+const BackgroundGradientAnimate = () => {
   useEffect(() => {
     animate(svg.createDrawable('.line'), {
       draw: ['0 0', '0 1', '1 1'],
@@ -110,4 +110,4 @@ const HomePage = () => {
   )
 }
 
-export default HomePage
+export default BackgroundGradientAnimate
