@@ -33,7 +33,7 @@ function App() {
       <Route path='/jelly-cursor' element={<JellyCursor />} />
       <Route path='/image-trail' element={<ImageTrail />} />
       <Route path='/background-gradient-animate' element={<BackgroundGradientAnimate />} />
-      <Route path='/not-found-page' element={<NotFoundPage />} />
+      {/* <Route path='/not-found-page' element={<NotFoundPage />} /> */}
       <Route path='*' element={<NotFoundPage />} />
     </Routes>
   )

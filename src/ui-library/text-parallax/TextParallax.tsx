@@ -1,8 +1,9 @@
 import Lenis from 'lenis'
 import { useScroll, useTransform, motion } from 'motion/react'
 import React, { useEffect, useRef } from 'react'
-import { bg1, bg2, bg3 } from '../zoom-parallax/image-demo'
+
 import { MoveDown } from 'lucide-react'
+import { bg1, bg2, bg3 } from '../../assets/images'
 
 const TextParallax = () => {
   const container = useRef<HTMLDivElement | null>(null)

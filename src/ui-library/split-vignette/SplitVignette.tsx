@@ -4,7 +4,7 @@ import { useEffect } from 'react'
 import Description from './components/Description'
 import './components/index.css'
 import Gallery from './components/Gallery'
-import { bg1, bg2, bg3, bg4 } from '../zoom-parallax/image-demo'
+import { bg1, bg2, bg3, bg4 } from '../../assets/images'
 
 const SplitVignette = () => {
   const projects = [

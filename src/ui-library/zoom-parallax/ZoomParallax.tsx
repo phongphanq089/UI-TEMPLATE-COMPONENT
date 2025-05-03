@@ -1,8 +1,9 @@
 import { motion, useScroll, useTransform } from 'motion/react'
 import { useRef } from 'react'
-import { bg1, bg2, bg3, bg4, bg5, bg6 } from './image-demo'
+
 import './index.css'
 import { MoveDown } from 'lucide-react'
+import { bg1, bg2, bg3, bg4, bg5, bg6, bg7 } from '../../assets/images'
 
 const ZoomParallax = () => {
   const container = useRef(null)
@@ -43,7 +44,7 @@ const ZoomParallax = () => {
       scale: scale8
     },
     {
-      src: bg6,
+      src: bg7,
       scale: scale9
     }
   ]

@@ -1,28 +1,7 @@
 'use client'
 
 import React, { useCallback, useRef, useState } from 'react'
-
-// import type {Config} from "tailwindcss";
-// import defaultTheme from "tailwindcss/defaultTheme";
-// import typonographyPlugin from "@tailwindcss/typography";
-
-// Tailwind Config for trail-effect keyframe
-// theme: {
-//     extend: {
-//         keyframes: {
-//             "trail-effect": {
-//                 "0%": {transform: "scale(0)"},
-//                 "30%": {transform: "scale(1)"},
-//                 "80%, 100%": {
-//                     transform: "scale(1) translateY(800px)",
-//                 },
-//             },
-//         },
-//         animation: {
-//             "trail-effect": "trail-effect 2s ease-out forwards",
-//         },
-//     },
-// }
+import { cartImageDemo } from '../../assets/images'
 
 interface DivPosition {
   id: number
@@ -33,16 +12,16 @@ interface DivPosition {
 }
 
 const images = [
-  'https://ik.imagekit.io/khoaphan/playground/Image%20Trail/Studio%20Ghibli%20style%20illustration.webp?updatedAt=1727515247238',
-  'https://ik.imagekit.io/khoaphan/playground/Image%20Trail/Uma%20garota%20com%20cabelos%20longos%20e%20lisos%20no%20estilo%20vi.webp?updatedAt=1727515221917',
-  'https://ik.imagekit.io/khoaphan/playground/Image%20Trail/Une%20fille%20long%20cheveux%20lisse%20dans%20le%20style%2090_s%20an.webp?updatedAt=1727515221839',
-  'https://ik.imagekit.io/khoaphan/playground/Image%20Trail/Une%20fille%20avec%20un%20s%C3%A8che-cheveux%20dans%20le%20style%2090_s%20(1).webp?updatedAt=1727515221821',
-  'https://ik.imagekit.io/khoaphan/playground/Image%20Trail/A%20logo%20for%20a%20female%20grunge%20hip%20hop%20artist%20named%20Sa%20(1).webp?updatedAt=1727515221821',
-  'https://ik.imagekit.io/khoaphan/playground/Image%20Trail/A%20FULLY%20COLORED%20picture%20for%20coloring%20of%20an%20anime%20g.webp?updatedAt=1727515221756',
-  'https://ik.imagekit.io/khoaphan/playground/Image%20Trail/A%20logo%20for%20a%20female%20grunge%20hip%20hop%20artist%20named%20Sa.webp?updatedAt=1727515221580',
-  'https://ik.imagekit.io/khoaphan/playground/Image%20Trail/beautiful%20girl%20(1).webp?updatedAt=1727515221535',
-  'https://ik.imagekit.io/khoaphan/playground/Image%20Trail/beautiful%20girl.webp?updatedAt=1727515221501',
-  'https://ik.imagekit.io/khoaphan/playground/Image%20Trail/Une%20fille%20avec%20un%20s%C3%A8che-cheveux%20dans%20le%20style%2090_s.webp?updatedAt=1727515220837'
+  cartImageDemo.card1,
+  cartImageDemo.card2,
+  cartImageDemo.card3,
+  cartImageDemo.card4,
+  cartImageDemo.card5,
+  cartImageDemo.card6,
+  cartImageDemo.card7,
+  cartImageDemo.card8,
+  cartImageDemo.card9,
+  cartImageDemo.card10
 ]
 
 const ImageTrail = () => {
